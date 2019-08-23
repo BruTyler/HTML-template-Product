@@ -177,20 +177,44 @@
             <section class="contacts autonomous-box">
                 <h2 class="center">Contacts</h2>
                 <div class="contacts-container">
-                    <form class="feedback-form"></form>
+                    <form class="feedback-form" method="post" action="#">
+                        <input type="text" placeholder="Your name:" name="FullName">
+                        <input type="text" placeholder="Your email:" name="Mail">
+                        <textarea placeholder="Your message:" name="Message"></textarea>
+                        <input class="button-submit" type="submit" value="send">
+                    </form>
                     <address class="contacts-social">
-                        <p class="socialico">lfigx</p>
+                        <a class="contact-item">
+                            <img src="img/skype_icon.png" alt="skype" width="26" height="26">
+                            <span class="contact-item-description">here_your_login_skype</span>
+                        </a>
+                        <a class="contact-item">
+                            <img src="img/icq_icon.png" alt="icq" width="26" height="26">
+                            <span>279679659</span>
+                        </a>
+                        <a class="contact-item">
+                            <img src="img/email_icon.png" alt="email" width="26" height="26">
+                            <span>psdhtmlcss@mail.ru</span>
+                        </a>
+                        <a class="contact-item">
+                            <img src="img/phone_icon.png" alt="phone" width="26" height="26">
+                            <span>80 00 4568 55 55</span>
+                        </a>
+                        <div class="contact-socialico-group">
+                            <a href="#" class="socialico">l</a>
+                            <a href="#" class="socialico">f</a>
+                            <a href="#" class="socialico">i</a>
+                            <a href="#" class="socialico">g</a>
+                            <a href="#" class="socialico">x</a>
+                        </div>
                     </address>
                 </div>
             </section>
-
-
-            <section class="copyright">
+            <div class="copyright">
                 <p class="copy-description">
                     Copyright &copy; 2014 Product name · PSD HTML CSS
                 </p>
-            </section>
-
+            </div>
         </footer>
     </div>
 </body></html>

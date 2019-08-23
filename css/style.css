@@ -1,6 +1,6 @@
 @font-face {
     font-family: Socialico;
-    src: url(fonts/Socialico.ttf);
+    src: url(../fonts/Socialico.ttf);
 }
 
 * {
@@ -21,6 +21,8 @@ h5,
 h6,
 blockquote,
 address,
+input[placeholder],
+::placeholder,
 .pluses-list-single,
 .header-list-single,
 .price-value,
@@ -53,16 +55,32 @@ h3 {
     line-height: 1.25;
 }
 
-input {
+a {
+    text-decoration: none;
+}
+
+a:focus,
+a:active,
+input:focus,
+input:active,
+video:focus,
+video:active {
+    outline: none;
+}
+
+input[type="submit"]:hover,
+a:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+input,
+textarea {
     border-radius: 5px;
 }
 
 video {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
-}
-
-video:focus {
-    outline: none;
 }
 
 .center {
@@ -309,7 +327,6 @@ figure.screen:nth-last-child(2) {
 }
 
 .contacts {
-    min-height: 509px;
     background-color: rgb(68, 81, 97);
 }
 
@@ -324,19 +341,72 @@ figure.screen:nth-last-child(2) {
 
 .feedback-form {
     width: 500px;
-    height: 320px;
-    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea {
+    margin-bottom: 21px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feedback-form textarea {
+    resize: none;
+    height: 170px;
+}
+
+.feedback-form textarea,
+.feedback-form input[type="text"] {
+    padding: 12px 10px 11px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.feedback-form input[type="submit"] {
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
 }
 
 .contacts-social {
-    width: 300px;
-    padding: 0 45px;
-    
-    border: 1px solid white;
+    padding-left: 45px;
+}
+
+.contact-item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.contact-item span {
+    height: auto;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact-item img {
+    padding-right: 5px;
+}
+
+.contact-socialico-group {
+    margin-top: 35px;
 }
 
 .socialico {
     font-family: Socialico;
+    font-size: 60px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .copyright {
