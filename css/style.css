@@ -13,7 +13,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.pluses-list-single,
+.header-list-single {
     font-family: Arial;
     font-weight: normal;
     font-style: normal;
@@ -48,6 +50,7 @@ h3 {
 
 .container {
     width: 1280px;
+    margin: 0 auto;
 }
 
 header {
@@ -69,14 +72,12 @@ header {
     background: url(../img/check.png) no-repeat;
     padding: 0px 0px 15px 35px;
     text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.3);
-    font-family: Arial;
     font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: rgb(255, 255, 255);
+}
+
+.header-list-single:last-child {
+    padding-bottom: 0;
 }
 
 .main-pic {
@@ -122,14 +123,8 @@ section.pluses {
 .pluses-list-single {
     background: url(../img/plus.svg) no-repeat;
     padding: 0px 0px 40px 40px;
-    font-family: Arial;
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
     color: rgb(51, 51, 51);
 }
 
