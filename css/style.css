@@ -44,6 +44,14 @@ h3 {
     line-height: 1.25;
 }
 
+video {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3)
+}
+
+video:focus {
+    outline: none;
+}
+
 .center {
     text-align: center;
 }
