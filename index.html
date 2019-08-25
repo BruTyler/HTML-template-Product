@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="g-window-container">
+    <div var extracted1="advert__definition" ; class="g-window-container">
         <header class="header g-box">
             <div>
                 <h1 class="header__title">Product name</h1>
@@ -203,4 +203,73 @@
             </section>
         </footer>
     </div>
-</body></html>
+    <aside class="advert" id="advert">
+        <a class="advert__close" onclick="javascript:hide()">+</a>
+        <form class="advert__block" action="#" method="post">
+            <span class="advert__title g-box-mini">Специальное предложение</span>
+            <section class="g-box-mini">
+                <span class="advert__mini-title">Тип</span>
+                <div>
+                    <label class="advert__radio-label">
+                        <input class="advert__radio-input" type="radio" name="Type">
+                        <span class="advert__radio-visible"></span>
+                        Аксессуар для интерьера
+                    </label>
+                    <label class="advert__radio-label">
+                        <input class="advert__radio-input" type="radio" name="Type">
+                        <span class="advert__radio-visible"></span>
+                        Детская игрушка
+                    </label>
+                </div>
+            </section>
+            <section class="advert__color-section g-box-mini">
+            <span class="advert__mini-title">Цвет</span>
+            <div class="advert__check-wrapper">
+                <label class="advert__check-label">
+                    <input class="advert__check-input" type="checkbox" name="check1">
+                    <span class="advert__check-visible"></span>
+                    Белый
+                </label>
+                <label class="advert__check-label">
+                    <input class="advert__check-input" type="checkbox" name="check2">
+                    <span class="advert__check-visible"></span>
+                    Серый
+                </label>
+                <label class="advert__check-label">
+                    <input class="advert__check-input" type="checkbox" name="check3">
+                    <span class="advert__check-visible"></span>
+                    Тиффани
+                </label>
+                <label class="advert__check-label">
+                    <input class="advert__check-input" type="checkbox" name="check4">
+                    <span class="advert__check-visible"></span>
+                    Черный
+                </label>
+                <label class="advert__check-label">
+                    <input class="advert__check-input" type="checkbox" name="check5">
+                    <span class="advert__check-visible"></span>
+                    Розовый
+                </label>
+                <label class="advert__check-label">
+                    <input class="advert__check-input" type="checkbox" name="check6">
+                    <span class="advert__check-visible"></span>
+                    Оранжевый
+                </label>
+            </div>
+            </section>
+            <section class="g-box-mini">
+                <span class="advert__mini-title">ФИО</span>
+                <div class="advert__fio-wrapper">
+                    <label class="advert__text-label" for="lastName">Фамилия</label><input class="advert__text-input" type="text" id="lastName" name="lastName">
+                    <label class="advert__text-label" for="lastName">Имя</label><input class="advert__text-input" type="text" id="lastName" name="lastName">
+                </div>
+            </section>
+            <input class="advert__submit g-button" type="submit" value="отправить" onclick="javascript:hide()">
+        </form>
+    </aside>
+</body>
+<script>
+    function hide() {
+        document.getElementById("advert").style.display = "none";
+    };
+</script></html>
