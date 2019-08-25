@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 ul {
@@ -26,7 +27,8 @@ input[placeholder],
 .pluses-list-single,
 .header-list-single,
 .price-value,
-.price-benefit-item {
+.price-benefit-item,
+.contact-link {
     font-family: Arial;
     font-weight: normal;
     font-style: normal;
@@ -69,13 +71,15 @@ video:active {
 }
 
 input[type="submit"]:hover,
-a:hover {
+a:hover,
+button:hover {
     opacity: 0.9;
     cursor: pointer;
 }
 
 input,
-textarea {
+textarea,
+button {
     border-radius: 5px;
 }
 
@@ -128,7 +132,6 @@ header {
 section.about {
     min-height: 350px;
     background-color: rgb(255, 255, 255);
-
 }
 
 .about-content-wrapper {
@@ -225,7 +228,8 @@ figure.screen:nth-last-child(2) {
 }
 
 .review-avatar-container {
-    min-width: 75px;
+    display: block;
+    width: 75px;
     height: 75px;
     border-radius: 50%;
     background-color: rgb(68, 81, 97);
@@ -260,7 +264,7 @@ figure.screen:nth-last-child(2) {
     padding-bottom: 13px;
 }
 
-.review-description-container address {
+.review-description-container span {
     font-size: 14px;
     line-height: 1.29;
     color: rgb(152, 152, 152);
@@ -345,23 +349,23 @@ figure.screen:nth-last-child(2) {
     flex-direction: column;
 }
 
-.feedback-form input[type="text"],
-.feedback-form textarea {
+.feedback-form textarea,
+.feedback-form input[type="text"] {
     margin-bottom: 21px;
     width: 100%;
     box-sizing: border-box;
+    padding: 12px 10px 11px 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.feedback-form input[type="text"] {
+    height: 40px;
 }
 
 .feedback-form textarea {
     resize: none;
     height: 170px;
-}
-
-.feedback-form textarea,
-.feedback-form input[type="text"] {
-    padding: 12px 10px 11px 10px;
-    font-size: 16px;
-    line-height: 1.5;
 }
 
 .feedback-form input[type="submit"] {
@@ -370,51 +374,48 @@ figure.screen:nth-last-child(2) {
     margin: 0 auto;
 }
 
-.contacts-social {
-    padding-left: 45px;
+.contact-item {
+    padding: 0 0 20px 45px;
 }
 
-.contact-item {
+.contact-link {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
     font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 22px;
+    line-height: 24px;
     color: rgb(255, 255, 255);
 }
 
-.contact-item span {
-    height: auto;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: middle;
+.contact-skype {
+    background: url(../img/skype_icon.png) no-repeat;
+    background-size: contain;
 }
 
-.contact-item img {
-    padding-right: 5px;
+.contact-icq {
+    background: url(../img/icq_icon.png) no-repeat;
+    background-size: contain;
 }
 
-.contact-socialico-group {
-    margin-top: 35px;
+.contact-email {
+    background: url(../img/email_icon.png) no-repeat;
+    background-size: contain;
+}
+
+.contact-phone {
+    background: url(../img/phone_icon.png) no-repeat;
+    background-size: contain;
 }
 
 .socialico {
     font-family: Socialico;
     font-size: 60px;
-    line-height: 24px;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-    border-radius: 50%;
-    overflow: hidden;
+    color: rgb(255, 255, 255);
 }
 
 .copyright {
     background-color: rgb(255, 255, 255);
     padding: 8px 0 4px;
-}
-
-.copy-description {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.3px;

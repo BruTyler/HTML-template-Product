@@ -28,8 +28,7 @@
                     <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                     <p class="about-description">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                 </div>
-                <video class="about-video" width="430" height="245" controls>
-                    <source src="video/sample.webm">
+                <video src="video/sample.webm" class="about-video" width="430" height="245" controls>
                     Вопроизведение видео не поддерживается вашим браузером.
                     <a href="video/sample.webm">Скачайте видео</a>
                 </video>
@@ -82,39 +81,31 @@
                 <h2 class="center">Reviews</h2>
                 <div class="review-container">
                     <div class="review-single">
-                        <div class="review-avatar-container">
-                            <img src="#" alt="avatar" class="review-avatar-value">
-                        </div>
+                        <img src="#" alt="avatar" class="review-avatar-container" width="75" height="75">
                         <div class="review-description-container">
                             <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</blockquote>
-                            <address>Lourens S.</address>
+                            <span>Lourens S.</span>
                         </div>
                     </div>
                     <div class="review-single">
-                        <div class="review-avatar-container">
-                            <img src="#" alt="avatar" class="review-avatar-value">
-                        </div>
+                        <img src="#" alt="avatar" class="review-avatar-container" width="75" height="75">
                         <div class="review-description-container">
                             <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</blockquote>
-                            <address>Lourens S.</address>
+                            <span>Lourens S.</span>
                         </div>
                     </div>
                     <div class="review-single">
-                        <div class="review-avatar-container">
-                            <img src="#" alt="avatar" class="review-avatar-value">
-                        </div>
+                        <img src="#" alt="avatar" class="review-avatar-container" width="75" height="75">
                         <div class="review-description-container">
                             <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</blockquote>
-                            <address>Lourens S.</address>
+                            <span>Lourens S.</span>
                         </div>
                     </div>
                     <div class="review-single">
-                        <div class="review-avatar-container">
-                            <img src="#" alt="avatar" class="review-avatar-value">
-                        </div>
+                        <img src="#" alt="avatar" class="review-avatar-container" width="75" height="75">
                         <div class="review-description-container">
                             <blockquote>Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</blockquote>
-                            <address>Lourens S.</address>
+                            <span>Lourens S.</span>
                         </div>
                     </div>
                 </div>
@@ -122,9 +113,8 @@
             <section class="prices autonomous-box">
                 <h2 class="center">Buy it now</h2>
                 <div class="price-container">
-                    <form class="price-single" method="post" action="#">
+                    <div class="price-single">
                         <h3 class="price-title">Standart</h3>
-                        <input type="hidden" value="Standart">
                         <span class="price-value">$100</span>
                         <ol class="price-benefit-list">
                             <li class="price-benefit-item">Porro officia cumque sint deleniti;</li>
@@ -132,11 +122,10 @@
                             <li class="price-benefit-item">Cum odio, iste quia doloribus autem;</li>
                             <li class="price-benefit-item">Aperiam nulla ea neque.</li>
                         </ol>
-                        <input class="button-submit" type="submit" value="buy">
-                    </form>
-                    <form class="price-single" method="post" action="#">
+                        <button class="button-submit">buy</button>
+                    </div>
+                    <div class="price-single">
                         <h3 class="price-title">Premium</h3>
-                        <input type="hidden" value="Premium">
                         <span class="price-value">$150</span>
                         <ol class="price-benefit-list">
                             <li class="price-benefit-item">Porro officia cumque sint deleniti;</li>
@@ -148,11 +137,10 @@
                             <li class="price-benefit-item">Cum odio, iste quia doloribus autem;</li>
                             <li class="price-benefit-item">Aperiam nulla ea neque.</li>
                         </ol>
-                        <input class="button-submit" type="submit" value="buy">
-                    </form>
-                    <form class="price-single" method="post" action="#">
+                        <button class="button-submit">buy</button>
+                    </div>
+                    <div class="price-single">
                         <h3 class="price-title">Lux</h3>
-                        <input type="hidden" value="Lux">
                         <span class="price-value">$200</span>
                         <ol class="price-benefit-list">
                             <li class="price-benefit-item">Porro officia cumque sint deleniti;</li>
@@ -168,8 +156,8 @@
                             <li class="price-benefit-item">Cum odio, iste quia doloribus autem;</li>
                             <li class="price-benefit-item">Aperiam nulla ea neque.</li>
                         </ol>
-                        <input class="button-submit" type="submit" value="buy">
-                    </form>
+                        <button class="button-submit">buy</button>
+                    </div>
                 </div>
             </section>
         </main>
@@ -183,38 +171,24 @@
                         <textarea placeholder="Your message:" name="Message"></textarea>
                         <input class="button-submit" type="submit" value="send">
                     </form>
-                    <address class="contacts-social">
-                        <a class="contact-item">
-                            <img src="img/skype_icon.png" alt="skype" width="26" height="26">
-                            <span class="contact-item-description">here_your_login_skype</span>
-                        </a>
-                        <a class="contact-item">
-                            <img src="img/icq_icon.png" alt="icq" width="26" height="26">
-                            <span>279679659</span>
-                        </a>
-                        <a class="contact-item">
-                            <img src="img/email_icon.png" alt="email" width="26" height="26">
-                            <span>psdhtmlcss@mail.ru</span>
-                        </a>
-                        <a class="contact-item">
-                            <img src="img/phone_icon.png" alt="phone" width="26" height="26">
-                            <span>80 00 4568 55 55</span>
-                        </a>
-                        <div class="contact-socialico-group">
+                    <ul>
+                        <li class="contact-item"><a href="#" class="contact-link contact-skype">here_your_login_skype</a></li>
+                        <li class="contact-item"><a href="#" class="contact-link contact-icq">279679659</a></li>
+                        <li class="contact-item"><a href="#" class="contact-link contact-email">psdhtmlcss@mail.ru</a></li>
+                        <li class="contact-item"><a href="#" class="contact-link contact-phone">80 00 4568 55 55</a></li>
+                        <li class="contact-item">
                             <a href="#" class="socialico">l</a>
                             <a href="#" class="socialico">f</a>
                             <a href="#" class="socialico">i</a>
                             <a href="#" class="socialico">g</a>
                             <a href="#" class="socialico">x</a>
-                        </div>
-                    </address>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <div class="copyright">
-                <p class="copy-description">
-                    Copyright &copy; 2014 Product name · PSD HTML CSS
-                </p>
-            </div>
+            <section class="copyright">
+                Copyright &copy; 2014 Product name · PSD HTML CSS
+            </section>
         </footer>
     </div>
 </body></html>
