@@ -66,21 +66,21 @@
                     <img class="screenshots__picture" src="#" alt="screenshot" width="200" height="150">
                     <figcaption>
                         <h3>The description for the image</h3>
-                        <p class="screen__description">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                        <p class="screenshots__description">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                     </figcaption>
                 </figure>
                 <figure class="screenshots__box">
                     <img class="screenshots__picture" src="#" alt="screenshot" width="200" height="150">
                     <figcaption>
                         <h3>The description for the image</h3>
-                        <p class="screen__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
+                        <p class="screenshots__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
                     </figcaption>
                 </figure>
                 <figure class="screenshots__box">
                     <img class="screenshots__picture" src="#" alt="screenshot" width="200" height="150">
                     <figcaption>
                         <h3>The description for the image</h3>
-                        <p class="screen__description">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+                        <p class="screenshots__description">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
                     </figcaption>
                 </figure>
                 <figure class="screenshots__box">
@@ -226,44 +226,55 @@
             <span class="advert__mini-title">Цвет</span>
             <div class="advert__check-wrapper">
                 <label class="advert__check-label">
-                    <input class="advert__check-input" type="checkbox" name="check1">
+                    <input class="advert__check-input" type="checkbox" name="white">
                     <span class="advert__check-visible"></span>
                     Белый
                 </label>
                 <label class="advert__check-label">
-                    <input class="advert__check-input" type="checkbox" name="check2">
+                    <input class="advert__check-input" type="checkbox" name="gray">
                     <span class="advert__check-visible"></span>
                     Серый
                 </label>
                 <label class="advert__check-label">
-                    <input class="advert__check-input" type="checkbox" name="check3">
+                    <input class="advert__check-input" type="checkbox" name="tiffany">
                     <span class="advert__check-visible"></span>
                     Тиффани
                 </label>
                 <label class="advert__check-label">
-                    <input class="advert__check-input" type="checkbox" name="check4">
+                    <input class="advert__check-input" type="checkbox" name="black">
                     <span class="advert__check-visible"></span>
                     Черный
                 </label>
                 <label class="advert__check-label">
-                    <input class="advert__check-input" type="checkbox" name="check5">
+                    <input class="advert__check-input" type="checkbox" name="pink">
                     <span class="advert__check-visible"></span>
                     Розовый
                 </label>
                 <label class="advert__check-label">
-                    <input class="advert__check-input" type="checkbox" name="check6">
+                    <input class="advert__check-input" type="checkbox" name="orange">
                     <span class="advert__check-visible"></span>
                     Оранжевый
                 </label>
             </div>
             </section>
-            <section class="g-box-mini">
-                <span class="advert__mini-title">ФИО</span>
-                <div class="advert__fio-wrapper">
-                    <label class="advert__text-label" for="lastName">Фамилия</label><input class="advert__text-input" type="text" id="lastName" name="lastName">
-                    <label class="advert__text-label" for="lastName">Имя</label><input class="advert__text-input" type="text" id="lastName" name="lastName">
-                </div>
-            </section>
+    <section class="g-box-mini">
+      <span class="advert__mini-title">ФИО</span>
+      <div class="advert__fio-wrapper">
+        <label class="advert__text-label" for="lastName">Фамилия: <input class="advert__text-input" type="text" placeholder="Укажите фамилию" id="lastName" name="lastName" required></label>
+        <label class="advert__text-label" for="firstName">Имя: <input class="advert__text-input" type="text" placeholder="Введите ваше имя" id="firstName" name="firstName" required></label>
+        <label class="advert__text-label" for="middleName">Отчество: <input class="advert__text-input" type="text" placeholder="Отчество, если желаете" id="middleName" name="middleName"></label>
+      </div>
+    </section>
+    <section class="advert__contacts-section g-box-mini">
+      <div class="advert__contacts-wrapper">
+        <span class="advert__mini-title advert__mini-title_inline">ТЕЛ</span>
+        <input class="advert__text-input advert__text-input_tel" type="tel" placeholder="+7 XXX XX XX" pattern="^\+7[0-9]{10}$" id="tel" name="tel" required>
+      </div>
+      <div class="advert__contacts-wrapper">
+        <span class="advert__mini-title advert__mini-title_inline">E-MAIL</span>
+        <input class="advert__text-input advert__text-input_email" type="email" placeholder="Мы не будем спамить, честно!" id="mail" name="mail" required>
+      </div>
+    </section>
             <input class="advert__submit g-button" type="submit" value="отправить" onclick="javascript:hide()">
         </form>
     </aside>
