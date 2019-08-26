@@ -483,8 +483,9 @@ button:hover {
     margin: auto;
     position: absolute;
     max-width: 500px;
-    max-height: 400px;
+    max-height: 575px;
     background-color: rgb(255, 255, 255);
+    padding: 30px 0;
 }
 
 .advert__close {
@@ -527,9 +528,11 @@ button:hover {
 
 .advert__title {
     display: block;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
     color: rgb(68, 81, 97);
+    text-transform: uppercase;
 }
 
 .advert__mini-title {
@@ -537,7 +540,7 @@ button:hover {
     text-align: right;
     padding-right: 10px;
     min-width: 60px;
-    color: rgb(139, 200,184);
+    color: rgb(139, 200, 184);
 }
 
 .advert__radio-label {
@@ -573,12 +576,9 @@ button:hover {
     top: 4px;
     width: 10px;
     height: 10px;
-    background-color: rgb(139, 200,184);
+    background-color: rgb(139, 200, 184);
     border-radius: 50%;
 }
-
-
-
 
 .advert__color-section {
     background-color: rgb(239, 239, 239);
@@ -611,14 +611,13 @@ button:hover {
 }
 
 .advert__check-input:checked + .advert__check-visible::after {
-  width: 6px;
-  height: 12px;
-  left: 6px;
-  border-bottom: solid 1px black;
-  border-right: solid 1px black;
-  transform: rotate(45deg);
+    width: 6px;
+    height: 12px;
+    left: 6px;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    transform: rotate(45deg);
 }
-
 
 .advert__check-wrapper {
     display: flex;
@@ -628,16 +627,59 @@ button:hover {
 
 .advert__text-input {
     display: inline-block;
+    padding: 0 8px;
     border: none;
-    width: calc(100% - 75px);
-    border-bottom: solid 2px black;
-    box-sizing: content-box;
+    width: 100%;
+    border-bottom: solid 1px black;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.advert__text-input[placeholder] {
+    font-size: 12px;
+}
+
+.advert__text-input_tel {
+    background: url(../img/phone.svg) no-repeat bottom 2px right 7px /15px;
+    opacity: 0.4;
+}
+
+.advert__text-input_email {
+    background: url(../img/envelop.svg) no-repeat bottom 2px right 7px /15px;
+    opacity: 0.4;
 }
 
 .advert__text-label {
-    display: inline-block;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.advert__text-label:last-child {
+  padding-bottom: 0;
 }
 
 .advert__fio-wrapper {
-    display: 
+    width: 100%;
+    padding-right: 40px;
+}
+
+.advert__contacts-section {
+    background-color: rgb(239, 239, 239);
+    display: block;
+}
+
+.advert__contacts-wrapper {
+    padding-right: 40px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.advert__mini-title_inline {
+    display: inline-block;
+}
+
+.advert__submit {
+  display: block;
+  margin: 30px auto 0;
+  width: 140px;
+  height: 40px;
 }
