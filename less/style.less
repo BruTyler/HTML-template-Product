@@ -1,8 +1,22 @@
 // out: ../css/style.css
 
-/* variable */ 
-@font:Arial;
+@font-family: Arial;
 
+.font-base(@color) {
+    font-family: @font-family;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: @color;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
 
 /* import */
 @font-face {
@@ -29,13 +43,7 @@ textarea {
 
 
 body {
-    font-family: @font;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: rgb(68, 81, 97);
+    .font-base(rgb(68, 81, 97));
 }
 
 ul {
@@ -80,7 +88,7 @@ button:hover {
     line-height: 1;
     color: rgb(68, 81, 97);
     background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+    .border-radius(5px);
 }
 
 .g-txtform {
@@ -90,8 +98,8 @@ button:hover {
     padding: 12px 10px 11px 10px;
     font-size: 16px;
     line-height: 1.5;
-    border-radius: 5px;
     border: none;
+    .border-radius(5px);
 }
 
 .g-box {
@@ -277,7 +285,7 @@ button:hover {
     display: block;
     width: 75px;
     height: 75px;
-    border-radius: 50%;
+    .border-radius(50%);
     background-color: rgb(68, 81, 97);
     margin-right: 30px;
     overflow: hidden
@@ -289,7 +297,7 @@ button:hover {
     position: relative;
     padding: 13px;
     background-color: rgb(235, 235, 235);
-    border-radius: 5px;
+    .border-radius(5px);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -337,7 +345,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     background-color: rgb(68, 81, 97);
-    border-radius: 5px;
+    .border-radius(5px);
 }
 
 .price__key {
@@ -402,21 +410,13 @@ button:hover {
 .feedback__msg {
     resize: none;
     height: 170px;
-    font-family: @font;
     font-size: 16px;
-    font-weight: normal;
-    color: rgb(68, 81, 98);
+    
 }
 
 .feedback__msg::placeholder {
-    font-family: @font;
     font-size: 16px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: rgb(68, 81, 98);
+    .font-base(rgb(68, 81, 98));
 }
 
 .feedback__submit {
@@ -509,7 +509,7 @@ button:hover {
     vertical-align: middle;
     margin: auto;
     border: solid 2px rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
+    .border-radius(50%);
 }
 
 .advert__close:hover {
@@ -569,7 +569,7 @@ button:hover {
     height: 18px;
     position: relative;
     border: solid 1px black;
-    border-radius: 50%;
+    .border-radius(50%);
 }
 
 .advert__radio-visible::after {
@@ -583,7 +583,7 @@ button:hover {
     width: 10px;
     height: 10px;
     background-color: rgb(139, 200, 184);
-    border-radius: 50%;
+    .border-radius(50%);
 }
 
 .advert__color-section {
